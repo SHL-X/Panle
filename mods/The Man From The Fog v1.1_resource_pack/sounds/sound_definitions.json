@@ -1,0 +1,36 @@
+{
+  "mob.tmftf_monster.say": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/tmftf_monster/say/say1",
+      {
+        "load_on_low_memory": true,
+        "name": "sounds/mob/tmftf_monster/say/say2"
+      },
+      "sounds/mob/tmftf_monster/say/say3"
+    ]
+  },
+  "mob.tmftf_monster.hurt": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/tmftf_monster/hurt/hurt1",
+      "sounds/mob/tmftf_monster/hurt/hurt2"
+    ]
+  },
+  "mob.tmftf_monster.death": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/tmftf_monster/death/death"
+    ]
+  },
+  "mob.tmftf_monster.step": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/tmftf_monster/step/step1",
+      "sounds/mob/tmftf_monster/step/step2",
+      "sounds/mob/tmftf_monster/step/step3",
+      "sounds/mob/tmftf_monster/step/step4",
+      "sounds/mob/tmftf_monster/step/step5"
+    ]
+  }
+}

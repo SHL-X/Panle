@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_8b630614"
+    },
+    "tags": [
+      "Altar"
+    ],
+    "pattern": [
+      "A A",
+      " A ",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "tmftf:blo",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "tmftf:blodd_block",
+      "count": 12
+    }
+  }
+}

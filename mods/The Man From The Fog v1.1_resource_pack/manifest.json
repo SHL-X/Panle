@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§4YouTube: Ivan Jirb  by §fIvan Jirb ",
+    "name": "The Man From The Fog v1.1",
+    "uuid": "9b06502d-ebe3-4c07-b7b8-491f90bada85",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§4YouTube: Ivan Jirb  by §fIvan Jirb ",
+      "type": "resources",
+      "uuid": "54e2cc19-7b14-473d-95e7-ee54b66bad5b",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "0384b793-f627-44c0-93d1-aeba075f93c7",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

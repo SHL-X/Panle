@@ -1,0 +1,2 @@
+summon tmftf:monster
+summon lightning_bolt

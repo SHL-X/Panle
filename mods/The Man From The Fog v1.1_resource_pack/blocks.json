@@ -1,0 +1,19 @@
+{
+  "tmftf:book": {
+    "textures": "tmftf_book",
+    "sound": "metal"
+  },
+  "tmftf:head": {
+    "textures": "tmftf_head",
+    "sound": "sculk"
+  },
+  "tmftf:blodd_block": {
+    "textures": "tmftf_blodd_block",
+    "sound": "bone_block"
+  },
+  "format_version": [
+    1,
+    1,
+    0
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_20fc0479"
+    },
+    "tags": [
+      "crafting_table",
+      "Altar"
+    ],
+    "pattern": [
+      "B",
+      "C"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:book",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:redstone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "tmftf:note",
+      "count": 1
+    }
+  }
+}

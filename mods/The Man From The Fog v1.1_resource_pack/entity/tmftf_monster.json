@@ -1,0 +1,98 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tmftf:monster",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/tmftf_monster"
+      },
+      "geometry": {
+        "default": "geometry.tmftf_monster"
+      },
+      "spawn_egg": {
+        "texture": "tmftf:monster",
+        "texture_index": 0
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "animations": {
+        "humanoid_big_head": "animation.tmftf_monster.idle",
+        "look_at_target_default": "animation.tmftf_monster.idle",
+        "look_at_target_gliding": "animation.tmftf_monster.idle",
+        "look_at_target_swimming": "animation.tmftf_monster.idle",
+        "move": "animation.tmftf_monster.move",
+        "riding.arms": "animation.tmftf_monster.idle",
+        "riding.legs": "animation.tmftf_monster.idle",
+        "holding": "animation.tmftf_monster.idle",
+        "brandish_spear": "animation.tmftf_monster.idle",
+        "charging": "animation.tmftf_monster.idle",
+        "attack.rotations": "animation.tmftf_monster.attack",
+        "sneaking": "animation.tmftf_monster.move",
+        "bob": "animation.humanoid.bob",
+        "damage_nearby_mobs": "animation.tmftf_monster.attack",
+        "bow_and_arrow": "animation.tmftf_monster.attack",
+        "use_item_progress": "animation.tmftf_monster.attack",
+        "zombie_attack_bare_hand": "animation.tmftf_monster.attack",
+        "swimming": "animation.tmftf_monster.attack"
+      },
+      "animation_controllers": [
+        {
+          "humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head"
+        },
+        {
+          "look_at_target": "controller.animation.humanoid.look_at_target"
+        },
+        {
+          "move": "controller.animation.tmftf_monster.move"
+        },
+        {
+          "riding": "controller.animation.humanoid.riding"
+        },
+        {
+          "holding": "controller.animation.humanoid.holding"
+        },
+        {
+          "brandish_spear": "controller.animation.humanoid.brandish_spear"
+        },
+        {
+          "charging": "controller.animation.humanoid.charging"
+        },
+        {
+          "attack": "controller.animation.tmftf_monster.attack_bare_hand"
+        },
+        {
+          "sneaking": "controller.animation.humanoid.sneaking"
+        },
+        {
+          "bob": "controller.animation.humanoid.bob"
+        },
+        {
+          "damage_nearby_mobs": "controller.animation.tmftf_monster.attack"
+        },
+        {
+          "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+        },
+        {
+          "use_item_progress": "controller.animation.humanoid.use_item_progress"
+        },
+        {
+          "zombie_attack_bare_hand": "controller.animation.tmftf_monster.attack_bare_hand"
+        },
+        {
+          "swimming": "controller.animation.tmftf_monster.swimming"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.zombie"
+      ],
+      "enable_attachables": true
+    }
+  }
+}

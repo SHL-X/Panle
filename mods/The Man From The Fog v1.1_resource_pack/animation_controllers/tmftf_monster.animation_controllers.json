@@ -1,0 +1,74 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.tmftf_monster.attack_bare_hand": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "is_bare_hand": "variable.is_holding_left != 1.0"
+            }
+          ]
+        },
+        "is_bare_hand": {
+          "animations": [
+            "zombie_attack_bare_hand"
+          ],
+          "transitions": [
+            {
+              "default": "variable.is_holding_left == 1.0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.tmftf_monster.swimming": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "is_swimming": "variable.swim_amount > 0.0"
+            }
+          ]
+        },
+        "is_swimming": {
+          "animations": [
+            "swimming"
+          ],
+          "transitions": [
+            {
+              "default": "variable.swim_amount <= 0.0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.tmftf_monster.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "walking": "q.ground_speed > 1.0"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "walking": {
+          "animations": [
+            "move"
+          ],
+          "transitions": [
+            {
+              "idle": "q.ground_speed < 0.5"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

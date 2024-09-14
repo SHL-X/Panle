@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_7c460da3"
+    },
+    "tags": [
+      "Altar"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "tmftf:blo",
+        "data": 0
+      },
+      "B": {
+        "item": "tmftf:note",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "tmftf:head",
+      "count": 8
+    }
+  }
+}

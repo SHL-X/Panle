@@ -1,0 +1,90 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tmftf:blo",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:hand_equipped": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:food": {
+        "saturation_modifier": "supernatural",
+        "nutrition": 10,
+        "can_always_eat": true,
+        "on_consume": {
+          "event": "on_consume_effects",
+          "target": "self"
+        }
+      },
+      "minecraft:use_duration": 1,
+      "minecraft:cooldown": {
+        "category": "action_cooldown",
+        "duration": 60
+      },
+      "minecraft:allow_off_hand": true,
+      "tag:minecraft:is_food": {},
+      "minecraft:use_animation": "drink",
+      "minecraft:icon": {
+        "texture": "tmftf:blo"
+      },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        }
+      }
+    },
+    "events": {
+      "on_consume_effects": {
+        "sequence": [
+          {
+            "add_mob_effect": {
+              "effect": "night_vision",
+              "amplifier": 1,
+              "target": "holder",
+              "duration": 666
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "speed",
+              "amplifier": 2,
+              "target": "holder",
+              "duration": 666
+            }
+          }
+        ]
+      }
+    }
+  }
+}

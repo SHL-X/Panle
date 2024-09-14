@@ -1,0 +1,23 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "tmftf_book": {
+      "textures": [
+        "textures/blocks/tmftf_book"
+      ]
+    },
+    "tmftf_head": {
+      "textures": [
+        "textures/blocks/tmftf_head"
+      ]
+    },
+    "tmftf_blodd_block": {
+      "textures": [
+        "textures/blocks/tmftf_blodd_block"
+      ]
+    }
+  }
+}

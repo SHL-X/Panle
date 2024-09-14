@@ -1,0 +1,59 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "tmftf:monster": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.tmftf_monster.say",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": {
+            "sound": "mob.tmftf_monster.hurt",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "death": {
+            "sound": "mob.tmftf_monster.death",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "step": {
+            "sound": "mob.tmftf_monster.step",
+            "volume": [
+              0.15,
+              0.15
+            ],
+            "pitch": [
+              1.0,
+              1.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}
